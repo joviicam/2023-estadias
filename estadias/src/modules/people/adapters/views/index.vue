@@ -48,17 +48,17 @@
 
 <script lang="ts" >
 import Vue from "vue";
-import { Person } from "../../entities/Person";
+import { Person } from "@/modules/people/entities/Person";
 
 export default Vue.extend({
     name:'IndexPersonVue',
     data(){
         return {
-            valueX:'Este valor esta aquí' as string,
+            valueX:'Este valor esta aquí',
             person:{
               name:'',
               job:''
-            } as Person
+            } as Person,
         }
     }
 })
