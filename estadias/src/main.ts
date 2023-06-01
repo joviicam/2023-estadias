@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+// import Vue from 'vue'   // in Vue 2
+
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueSweetalert2 from 'vue-sweetalert2';
@@ -17,6 +21,7 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 Vue.use(VueSweetalert2);
+Vue.use(VueAxios, axios);
 
 
 Vue.config.productionTip = false
