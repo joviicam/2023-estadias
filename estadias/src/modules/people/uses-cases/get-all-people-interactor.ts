@@ -3,6 +3,7 @@ import { AllPeopleDto } from "../entities/AllPeopleDto";
 import { UseCase } from "@/kernel/contacts";
 import { PeopleRepository } from "./ports/people.repository";
 
+//Aqui se definen las reglas de negocio de la aplicacion y se implementan los casos de uso
 export class getAllPeopleInteractor implements UseCase<number,ResponseApi<AllPeopleDto>>{
     //constructor del interactor
     constructor (private readonly peopleRepository: PeopleRepository){}

@@ -7,6 +7,7 @@ export class PeopleStorageGateway implements PeopleRepository{
     //llamadas al webservice
 
     //si se pone await la funcion debe ser async
+    //Aqui se implementan los metodos del repositorio de personas y se le da la funcionalidad de llamar al webservice
     async getAllPeople(page: number): Promise<ResponseApi<AllPeopleDto>> {
         const response = await api.doGet(`/users?page=${page}`);
         return {
